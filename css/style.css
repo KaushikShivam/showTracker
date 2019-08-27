@@ -111,3 +111,26 @@ body {
     color: inherit; }
   .nav__bold {
     font-weight: 700; }
+
+.section-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 14rem 10rem; }
+  .section-features__paragraph {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.8); }
+  .section-features__box {
+    display: flex;
+    margin-top: 8rem;
+    justify-content: space-around; }
+
+.section-shows {
+  display: flex;
+  justify-content: space-between; }
+  .section-shows figure:not(:last-child) {
+    margin-right: 1rem; }
+  .section-shows__img {
+    width: 100%;
+    display: block; }
