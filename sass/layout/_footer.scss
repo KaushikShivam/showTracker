@@ -24,6 +24,9 @@
       }
     }
 
+    @include respond($phone-l) {
+      margin: 8rem 6rem;
+    }
   }
 
   &-social {

@@ -4,6 +4,10 @@
   align-items: center;
   margin: 14rem 10rem;
 
+  @include respond($tab-port) {
+    margin: 10rem 5rem;
+  }
+
   &__paragraph {
     font-size: 1.8rem;
     font-weight: 300;
@@ -14,6 +18,10 @@
     display: flex;
     margin-top: 8rem;
     justify-content: space-around;
+
+    @include respond($phone-s) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -36,6 +44,14 @@
   display: flex;
   justify-content: space-between;
 
+  @include respond($tab-port) {
+    margin: 10rem 0;
+  }
+
+  @include respond($phone-l) {
+    flex-direction: column;
+  }
+
   &__content {
     align-self: center;
     margin-left: 10rem;
@@ -47,6 +63,11 @@
     img {
       width: 100%;
     }
+
+    @include respond($phone-l) {
+      margin: 4rem;
+      margin-bottom: -5rem;
+    }
   }
 }
 
@@ -54,6 +75,10 @@
   background-color: $color-black;
   display: flex;
   align-items: center;
+
+  @include respond($phone-l) {
+    flex-direction: column;
+  }
 
   &__content {
     align-self: center;

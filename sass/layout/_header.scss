@@ -4,11 +4,22 @@
     justify-content: flex-start;
     margin: 8.5rem 13rem;
 
+    @include respond($tab-port) {
+      flex-direction: column;
+    }
+
+    @include respond($phone-l) {
+      margin: 8rem 10rem;
+    }
   }
 
   &__content-box {
     padding-top: 6rem;
     flex: 0 0 60%;
+
+    @include respond($tab-port) {
+      flex: 0 0 100%;
+    }
 
     display: flex;
     flex-direction: column;
@@ -16,12 +27,19 @@
 
   &__content {
     margin-bottom: auto;
+
+    @include respond($tab-port) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__content__paragraph {
     width: 65%;
     margin-bottom: auto;
 
+    @include respond($desktop) {
+      width: 85%;
+    }
   }
 
   &__clients {
@@ -39,12 +57,24 @@
   &__images {
     img {
       margin-right: 3.7rem;
+
+      @include respond($phone-l) {
+        margin-right: 2rem;
+      }
     }
   }
 
   &__img {
     img {
       width: 100%;
+
+      @include respond($tab-port) {
+        display: none;
+      }
+
+      @include respond($phone-s) {
+        display: block;
+      }
     }
   }
 }
