@@ -89,3 +89,25 @@ body {
 
 .header__img img {
   width: 100%; }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem; }
+  .nav__main {
+    display: flex;
+    list-style: none;
+    justify-content: space-around; }
+  .nav__login {
+    display: flex;
+    list-style: none; }
+  .nav__item {
+    margin: 0 3rem; }
+  .nav__item a {
+    text-decoration: none;
+    color: inherit; }
+  .nav__bold {
+    font-weight: 700; }
