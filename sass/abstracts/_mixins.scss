@@ -1,0 +1,46 @@
+// RESPONSIVE BREAKPOINTS
+$desktop: 75em;
+$laptop: 68.75em; // 1100px
+$tab: 56.25em; //900
+$tab-port: 46.87em; //750
+$phone-l: 40.62em; //650
+$phone-s: 31.25em; //500
+
+//MEDIA BREAKPOINT MANAGER
+@mixin respond($breakpoint) {
+  @if $breakpoint==$desktop {
+    @media screen and (max-width: $desktop) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$laptop {
+    @media screen and (max-width: $laptop) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$tab {
+    @media screen and (max-width: $tab) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$tab-port {
+    @media screen and (max-width: $tab) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$phone-l {
+    @media screen and (max-width: $phone-l) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$phone-s {
+    @media screen and (max-width: $phone-s) {
+      @content;
+    }
+  }
+}
