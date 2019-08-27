@@ -56,6 +56,39 @@ body {
   .paragraph-tertiary--white {
     color: rgba(255, 255, 255, 0.8); }
 
+.footer {
+  display: flex;
+  flex-direction: column; }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 10rem;
+    text-align: center; }
+    .footer-box__paragraph {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.8); }
+    .footer-box__cta {
+      align-self: stretch;
+      justify-content: center; }
+      .footer-box__cta > input {
+        flex: 0 0 30%; }
+  .footer-social {
+    text-align: center;
+    padding: 2rem; }
+    .footer-social__list {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      padding: 1rem; }
+    .footer-social__item {
+      margin: 0 1rem; }
+    .footer-social__copy {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.5); }
+
 .header__container {
   display: flex;
   justify-content: flex-start;
