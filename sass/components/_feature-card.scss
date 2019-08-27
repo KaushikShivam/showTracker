@@ -1,0 +1,24 @@
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 0 25%;
+
+  &__icon {
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    color: rgba($color-black, 0.7);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
