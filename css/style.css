@@ -258,7 +258,14 @@ body {
     margin: 0 3rem; }
   .nav__item a {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    padding-bottom: 1.5rem;
+    padding-top: 1.3rem;
+    transition: all .2s; }
+  .nav__item a:hover {
+    color: #540cfa;
+    border-bottom: 3px solid #540cfa;
+    border-top: 3px solid #540cfa; }
   .nav__bold {
     font-weight: 700; }
 
