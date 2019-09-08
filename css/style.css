@@ -81,7 +81,7 @@ body {
     color: rgba(255, 255, 255, 0.8); }
 
 .btn {
-  color: #fff;
+  color: #e6e6e6;
   background-color: #540cfa;
   text-decoration: none;
   border-radius: 4px;
@@ -99,7 +99,8 @@ body {
     font-size: 1.6rem;
     font-weight: 900; }
   .btn:hover {
-    background-color: #4204cf; }
+    background-color: #4204cf;
+    color: #fff; }
 
 .cta {
   display: flex;
