@@ -27,6 +27,9 @@
 
   &__content {
     margin-bottom: auto;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 
     @include respond($tab-port) {
       margin-bottom: 4rem;
@@ -44,6 +47,8 @@
 
   &__clients {
     margin-bottom: 3rem;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
   }
 
   &__client-text {
@@ -65,6 +70,9 @@
   }
 
   &__img {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+
     img {
       width: 100%;
 

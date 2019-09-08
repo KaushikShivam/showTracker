@@ -10,7 +10,6 @@ body {
   font-weight: 900;
   line-height: 1;
   margin-bottom: 2rem;
-  // margin-top: 2rem;
 
   @include respond($phone-l) {
     font-size: 5rem;
