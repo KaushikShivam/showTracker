@@ -4,8 +4,19 @@
   border: 1px solid rgba($color-black, 0.1);
   margin-bottom: 1.9rem;
   border-radius: 5px;
-  box-shadow: 0 2px 6px rgba($color-black, 0.1);
+  box-shadow: 0 4px 8px rgba($color-black, 0.1);
   max-width: 70%;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    background-color: $color-primary;
+
+
+    .platform-card__description {
+      color: white;
+    }
+  }
 
   &__img {
     margin: 1.7rem;
