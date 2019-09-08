@@ -125,7 +125,14 @@ body {
   .btn--inline {
     text-decoration: none;
     font-size: 1.6rem;
-    font-weight: 900; }
+    font-weight: 900;
+    color: #540cfa;
+    transition: all .2s; }
+    .btn--inline:hover {
+      color: #4204cf; }
+      .btn--inline:hover img {
+        transition: all .2s;
+        margin-left: 1rem; }
   .btn:hover {
     background-color: #4204cf;
     color: #fff; }

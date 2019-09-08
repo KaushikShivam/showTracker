@@ -22,6 +22,18 @@
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 900;
+    color: $color-primary;
+    transition: all .2s;
+
+    &:hover {
+      color: darken($color: $color-primary, $amount: 10);
+
+      & img {
+        transition: all .2s;
+        margin-left: 1rem;
+
+      }
+    }
   }
 
   &:hover {
