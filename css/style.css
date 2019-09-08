@@ -84,18 +84,22 @@ body {
   color: #fff;
   background-color: #540cfa;
   text-decoration: none;
-  border-radius: 4px; }
+  border-radius: 4px;
+  transition: all .2s; }
   .btn--primary {
     font-size: inherit;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(60, 9, 179, 0.3); }
   .btn--secondary {
     font-size: 1.6rem;
-    padding: 1.6rem 2.1rem; }
+    padding: 1.6rem 2.1rem;
+    cursor: pointer; }
   .btn--inline {
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 900; }
+  .btn:hover {
+    background-color: #4204cf; }
 
 .cta {
   display: flex;
@@ -258,7 +262,13 @@ body {
     margin: 0 3rem; }
   .nav__item a {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    padding-bottom: 1.5rem;
+    padding-top: 1.3rem; }
+  .nav__item a:hover {
+    color: #540cfa;
+    border-bottom: 3px solid #540cfa;
+    border-top: 3px solid #540cfa; }
   .nav__bold {
     font-weight: 700; }
 
