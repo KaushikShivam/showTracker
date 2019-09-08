@@ -1,0 +1,17 @@
+.platform-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba($color-black, 0.1);
+  margin-bottom: 1.9rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba($color-black, 0.1);
+  max-width: 70%;
+
+  &__img {
+    margin: 1.7rem;
+  }
+
+  &__description {
+    margin-right: 1.7rem;
+  }
+}

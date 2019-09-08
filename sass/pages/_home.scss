@@ -1,0 +1,110 @@
+.section-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 14rem 10rem;
+
+  @include respond($tab-port) {
+    margin: 10rem 5rem;
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgba($color-black, 0.8);
+  }
+
+  &__box {
+    display: flex;
+    margin-top: 8rem;
+    justify-content: space-around;
+
+    @include respond($phone-s) {
+      flex-direction: column;
+    }
+  }
+}
+
+.section-shows {
+  display: flex;
+  justify-content: space-between;
+
+  figure:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.section-platform {
+  margin: 14rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond($tab-port) {
+    margin: 10rem 0;
+  }
+
+  @include respond($phone-l) {
+    flex-direction: column;
+  }
+
+  &__content {
+    align-self: center;
+    margin-left: 10rem;
+  }
+
+  &__img {
+    flex: 0 0 50%;
+
+    img {
+      width: 100%;
+    }
+
+    @include respond($phone-l) {
+      margin: 4rem;
+      margin-bottom: -5rem;
+    }
+  }
+}
+
+.section-reviews {
+  background-color: $color-black;
+  display: flex;
+  align-items: center;
+
+  @include respond($phone-l) {
+    flex-direction: column;
+  }
+
+  &__content {
+    align-self: center;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10rem;
+  }
+
+  &__images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    img {
+      display: block;
+      width: 100%;
+      padding-right: 2rem;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgba($color-white, 0.8);
+  }
+}
